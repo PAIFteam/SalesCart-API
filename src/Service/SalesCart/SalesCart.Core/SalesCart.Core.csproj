@@ -1,0 +1,56 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Application\Commons\Enums\**" />
+    <Compile Remove="Application\Configurations\**" />
+    <Compile Remove="Application\Mappings\**" />
+    <Compile Remove="Application\UseCases\Games\**" />
+    <Compile Remove="Application\UseCases\SalesCartUser\GetGameUser\**" />
+    <Compile Remove="Application\UseCases\Report\**" />
+    <Compile Remove="Domain\Azure\**" />
+    <Compile Remove="Domain\Entities\Base\**" />
+    <Compile Remove="Domain\Messages\**" />
+    <EmbeddedResource Remove="Application\Commons\Enums\**" />
+    <EmbeddedResource Remove="Application\Configurations\**" />
+    <EmbeddedResource Remove="Application\Mappings\**" />
+    <EmbeddedResource Remove="Application\UseCases\Games\**" />
+    <EmbeddedResource Remove="Application\UseCases\SalesCartUser\GetGameUser\**" />
+    <EmbeddedResource Remove="Application\UseCases\Report\**" />
+    <EmbeddedResource Remove="Domain\Azure\**" />
+    <EmbeddedResource Remove="Domain\Entities\Base\**" />
+    <EmbeddedResource Remove="Domain\Messages\**" />
+    <None Remove="Application\Commons\Enums\**" />
+    <None Remove="Application\Configurations\**" />
+    <None Remove="Application\Mappings\**" />
+    <None Remove="Application\UseCases\Games\**" />
+    <None Remove="Application\UseCases\SalesCartUser\GetGameUser\**" />
+    <None Remove="Application\UseCases\Report\**" />
+    <None Remove="Domain\Azure\**" />
+    <None Remove="Domain\Entities\Base\**" />
+    <None Remove="Domain\Messages\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="Domain\Interfaces\IAddGameUserUseCase.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Include="Domain\Entities\Base\OutPutBase.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="MediatR" Version="12.4.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="8.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="9.0.9" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="9.0.9" />
+    <PackageReference Include="Microsoft.Extensions.Logging" Version="9.0.9" />
+    <PackageReference Include="MassTransit.AspNetCore" Version="7.0.7" />
+    <PackageReference Include="MassTransit.RabbitMQ" Version="7.0.7" />
+    <PackageReference Include="MassTransit.Azure.ServiceBus.Core" Version="7.0.7" />
+  </ItemGroup>
+</Project>
